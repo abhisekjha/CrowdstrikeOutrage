@@ -4,99 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real-Time Security Update Validation and Rollback System</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-        }
-        h2 {
-            color: #666;
-        }
-        p {
-            margin: 15px 0;
-        }
-        .highlight {
-            background-color: #ffeb3b;
-            padding: 2px 5px;
-            border-radius: 3px;
-        }
-        .code {
-            background-color: #eee;
-            padding: 10px;
-            border-radius: 5px;
-            font-family: "Courier New", Courier, monospace;
-        }
-        .button {
-            background-color: #007BFF;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Real-Time Security Update Validation and Rollback System</h1>
-        
-        <h2>The Problem</h2>
-        <p>
-            In July 2024, CrowdStrike faced a significant challenge when an update to their Falcon sensor caused a widespread IT outage. The update, designed to improve security, instead led to a critical failure, causing millions of devices to crash. This incident highlighted a critical gap in the software update process—lack of comprehensive validation and rollback mechanisms.
-        </p>
+        <p>A project designed to prevent outages like the CrowdStrike incident.</p>
+    </header>
 
-        <h2>What Happened?</h2>
+    <section class="story">
+        <h2>The CrowdStrike Outage: What Happened?</h2>
         <p>
-            The update introduced a mismatch in the number of input parameters expected by the system, leading to an out-of-bounds memory read. The result was a global IT meltdown, disrupting operations in hospitals, airlines, and other critical sectors. CrowdStrike had to quickly issue patches and engage in extensive damage control.
+            In July 2024, a routine update to the CrowdStrike Falcon sensor caused a massive IT outage. The update included a new configuration that required 21 input parameters. Unfortunately, the system was only prepared to handle 20 inputs, leading to a critical mismatch. This error caused millions of devices to crash, disrupting services in hospitals, airlines, and other critical sectors worldwide.
         </p>
-        
-        <h2>Our Solution</h2>
         <p>
-            To prevent such incidents, we developed the <span class="highlight">Real-Time Security Update Validation and Rollback System</span>. Our system ensures that updates are rigorously tested in a simulated environment before being deployed. It also includes AI-driven models to predict potential issues and an automated rollback mechanism to revert updates if a problem is detected.
+            CrowdStrike's swift response included rolling out patches, but the damage had already been done. This incident highlighted the risks associated with software updates, especially in high-stakes environments.
         </p>
-        
-        <h2>How It Works</h2>
+    </section>
+
+    <section class="project-demo">
+        <h2>Project Demo</h2>
         <p>
-            The system works in three stages:
+            Our Real-Time Security Update Validation and Rollback System was created to prevent such incidents. It validates updates in a sandbox environment, predicts potential issues using AI, and rolls back updates automatically if any problems are detected. Below is a demonstration of how our system works.
         </p>
-        <ul>
-            <li><strong>Pre-Deployment Validation:</strong> Updates are tested in a sandbox environment using both CrowdStrike Falcon and Microsoft Defender. The system checks for mismatches and potential issues before rollout.</li>
-            <li><strong>Staged Rollout:</strong> Updates are deployed in stages, with real-time monitoring to catch issues early. If any problem is detected, the system triggers an automatic rollback.</li>
-            <li><strong>Dashboard and Reporting:</strong> A comprehensive dashboard provides real-time insights into the update process, showing the status of deployments, issues, and rollbacks.</li>
-        </ul>
-        
-        <h2>Demo</h2>
-        <p>Watch the system in action:</p>
-        <div class="code">
-            <!-- Embed a video demo or link to a live demo -->
-            <p>Video Demo Coming Soon</p>
+        <div class="video-demo">
+            <!-- You can embed a YouTube video or any demo video here -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Demo Video" frameborder="0" allowfullscreen></iframe>
         </div>
+    </section>
 
-        <h2>Why It Matters</h2>
-        <p>
-            By addressing the issues that led to the CrowdStrike outage, our system provides a robust solution that ensures the safety and reliability of software updates. It not only prevents similar incidents but also sets a new standard for how updates should be managed in the cybersecurity industry.
-        </p>
-
-        <a href="https://github.com/yourusername/your-repository" class="button">View the Project on GitHub</a>
-    </div>
+    <footer>
+        <p>Created by Abhisek Kumar Jha | 2024</p>
+    </footer>
 </body>
 </html>
