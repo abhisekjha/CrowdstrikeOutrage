@@ -35,7 +35,7 @@ section {
 
 h2 {
     font-weight: 600;
-    color: #007aff;
+    color: #2d6db1;
 }
 
 .project-demo .video-demo {
@@ -46,7 +46,7 @@ h2 {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #007aff;
+    background-color: #44688f;
     color: white;
     position: fixed;
     bottom: 0;
